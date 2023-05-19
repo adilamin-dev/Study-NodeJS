@@ -1,6 +1,7 @@
 // Dependencies
 const url = require ('url');
 const {StringDecoder} = require('string_decoder')
+const router = require ('../router');
 
 // Module scaffolding
 const handler = {};
