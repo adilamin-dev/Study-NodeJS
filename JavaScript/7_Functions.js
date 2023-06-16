@@ -32,3 +32,63 @@ const targetFinder = function(Arr, target){
 
 console.log(targetFinder(myArr, 6));
 
+// Lexical scope
+
+const myVar = "Value1";
+
+function myApp (){
+	function myFunc(){
+		//const myVar = "Value2";
+		const myFunc2 = () => {
+			console.log(myVar);
+		}
+		myFunc2();
+	}
+	console.log(myVar);
+	myFunc();
+}
+
+myApp();
+
+
+// Parameter destructuring
+
+const myObj = {
+	name: 'Adil Amin',
+	age: 18,
+}
+
+function printDetails({name, age}){
+	console.log(name, age);
+}
+
+printDetails(myObj);
+
+// Callback functions
+
+function myFunc2(myName){
+	console.log("Inside myFunc2", myName);
+}
+
+function myFunc(callback){
+  callback("Adil");
+}
+
+myFunc(myFunc2);
+
+// Function returning function
+
+function retfunction(){
+	function retfunction2(){
+		return "Hello from retfunction2";
+	}
+	return retfunction2;
+}
+
+
+//const retf = retfunction();
+//console.log(retf());
+
+console.log(retfunction()());
+
+
