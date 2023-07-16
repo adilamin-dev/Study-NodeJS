@@ -161,6 +161,28 @@ console.log(mySpliceArr3, `Deleted Items: ${deletedItems3}`);
 
 
 
+// iterables
+// we can use for of loop in iterables
+// string, array are iterables
+const myString = "Adil Amin";
+for(let char of myString){
+	console.log(char);
+}
+
+const myArray = ["item1", "item2", "item3", "item4"];
+for(let item of myArray){
+	console.log(item)
+}
+
+
+// array like object
+// has a length property
+// can access with index
+// example: string
+
+const myName = "Hello World";
+console.log(myName.length);
+console.log(myName[6]);
 
 
 

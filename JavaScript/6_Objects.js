@@ -106,3 +106,43 @@ console.log(`User 1 Data: Name: ${user1FirstName.toUpperCase()} and Gender: ${us
 User 2 Data: Name: ${user2FirstName.toUpperCase()} and Gender: ${user2Gender.toUpperCase()}.`);
 
 
+// clone object using Object.assign()
+
+const myObject = {
+	key1: "Value1",
+	key2: "Value2"
+}
+
+
+// method 1
+const myObject1 = {...myObject}
+console.log("method 1", myObject1);
+
+// method 2
+const myObject2 = Object.assign({}, myObject)
+console.log("method 1", myObject2);
+
+
+myObject.key3 = "value3";
+console.log(myObject);
+console.log(myObject1);
+console.log(myObject2);
+
+// optional chaining
+
+const userObj = {
+	id: 1,
+	firstName: "Adil",
+	address: {houseNum: "1234"}
+}
+
+console.log(userObj.id);
+
+console.log(userObj?.firstName);
+
+console.log(userObj.address?.houseNum);
+
+
+
+
+

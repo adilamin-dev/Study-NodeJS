@@ -37,4 +37,36 @@ const person2 = new Map([['firstName', 'Adil'], ['age', 26], [9, 'Nine']]);
 console.log(person2);
 
 
+const person3 = {
+	id: 1,
+	firstName: 'Adil'
+}
+
+const person4 = {
+	id: 2,
+	firstName: 'Bristy'
+}
+const extraInfo = new Map();
+
+extraInfo.set(person3, {age: 25, gender: "Male"});
+extraInfo.set(person4, {age: 21, gender: "Female"});
+console.log(extraInfo);
+console.log(person3.id)
+console.log(extraInfo.get(person3).gender);
+console.log(extraInfo.get(person4).gender);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
